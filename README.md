@@ -12,11 +12,11 @@
         color: #555;
     }
     body {
-        background-color: #3fb399;
+        background-color: #f3f04a;
     }
     .container {
         width: 320px;
-        background-color: white;
+        background-color: rgb(170, 165, 165);
         margin: 120px auto;
     }
     table {
@@ -39,7 +39,7 @@
         vertical-align: bottom;
         text-align: right;
         padding-right: 16px;
-        background-color: #ececec;
+        background-color: rgb(170, 165, 165);
     }
 </style>
 </head>
@@ -52,7 +52,7 @@
             <td colspan="4" id="inputLabel">0</td>
         </tr>
         <tr>
-            <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
+            <td colspan="3"><button onclick="pushBtn(this);">C</button></td>
             <td><button onclick="pushBtn(this);">/</button></td>
         </tr>
         <tr>
