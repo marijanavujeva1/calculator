@@ -1,39 +1,72 @@
-<html>
-   <head>
-   <body>
-      <form name="calculator">
-         <table>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+<body>
+    <div class="container">
+        <table border="1" cellspacing="0">
             <tr>
-               <td colspan="4">
-                  <input type="text" name="display" id="display" disabled>
-               </td>
+                <td colspan="4" id="inputLabel">0</td>
             </tr>
             <tr>
-               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
-               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
-               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
-               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+                <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
+                <td><button onclick="pushBtn(this);">/</button></td>
             </tr>
             <tr>
-               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
-               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
-               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
-               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+                <td><button onclick="pushBtn(this);">7</button></td>
+                <td><button onclick="pushBtn(this);">8</button></td>
+                <td><button onclick="pushBtn(this);">9</button></td>
+                <td><button onclick="pushBtn(this);">*</button></td>
             </tr>
             <tr>
-               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
-               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
-               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
-               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+                <td><button onclick="pushBtn(this);">4</button></td>
+                <td><button onclick="pushBtn(this);">5</button></td>
+                <td><button onclick="pushBtn(this);">6</button></td>
+                <td><button onclick="pushBtn(this);">-</button></td>
             </tr>
             <tr>
-               <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
-               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
-               <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
-               <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+                <td><button onclick="pushBtn(this);">1</button></td>
+                <td><button onclick="pushBtn(this);">2</button></td>
+                <td><button onclick="pushBtn(this);">3</button></td>
+                <td><button onclick="pushBtn(this);">+</button></td>
             </tr>
-         </table>
-      </form>
-   </body>
-   </head>
-</html>
+            <tr>
+                <td colspan="2"><button onclick="pushBtn(this);">0</button></td>
+                <td><button onclick="pushBtn(this);">.</button></td>
+                <td><button onclick="pushBtn(this);">=</button></td>
+            </tr>
+        </table>
+    </div>
+     
+    <script>
+        var inputLabel = document.getElementById('inputLabel');
+         
+        function pushBtn(obj) {
+             
+            var pushed = obj.innerHTML;
+             
+            if (pushed == '=') {
+                // Calculate
+                inputLabel.innerHTML = eval(inputLabel.innerHTML);
+                 
+            } else if (pushed == 'AC') {
+                // All Clear
+                inputLabel.innerHTML = '0';
+                 
+            } else {
+                if (inputLabel.innerHTML == '0') {
+                    inputLabel.innerHTML = pushed;
+                     
+                } else {
+                    inputLabel.innerHTML += pushed;   
+                }
+            }
+        }
+    </script>
+    </body>
+    </html>
+    <link rel="stylesheet" href="style.css">
+   
