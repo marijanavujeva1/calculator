@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Calculator</title>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
    
    <style>
    {
@@ -106,5 +107,5 @@
     </script>
     </body>
     </html>
-    <link rel="stylesheet" href="style.css">
+   
    
