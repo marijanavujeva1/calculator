@@ -6,7 +6,7 @@
      <link rel="stylesheet" href="style.css"> </link>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
    
-   
+   ×
    <style>
    {
         font-family: 'Inconsolata', monospace;
