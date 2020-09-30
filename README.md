@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>A Simple Calculator</title>
+<title>Calculator</title>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+   
 <style>
     * {
         font-family: 'Inconsolata', monospace;
