@@ -53,7 +53,7 @@
                 <td colspan="4" id="inputLabel">0</td>
             </tr>
             <tr>
-                <td colspan="3"><button onclick="pushBtn(this);">C</button></td>
+                <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
                 <td><button onclick="pushBtn(this);">/</button></td>
             </tr>
             <tr>
