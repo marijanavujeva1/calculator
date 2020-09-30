@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>Calculator</title>
+     <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+   
    
    <style>
    {
