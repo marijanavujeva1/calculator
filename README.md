@@ -13,16 +13,16 @@
         color: #555;
     }
     body {
-        background-color: #f3f04a;
+        background-color:  #474545;
     }
     .container {
         width: 320px;
-        background-color: rgb(170, 165, 165);
+        background-color:  rgb(132, 166, 238);
         margin: 120px auto;
     }
     table {
         width: 100%;
-        border-color: #f4f4f4;
+        border-color:  rgb(132,166,238);
     }
     td {
         width: 25%;
@@ -40,7 +40,7 @@
         vertical-align: bottom;
         text-align: right;
         padding-right: 16px;
-        background-color: rgb(170, 165, 165);
+        background-color:  rgb(198, 224, 245);
     }
    </style>
    
