@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Calculator</title>
+<title>Kalkulator</title>
      <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
    
