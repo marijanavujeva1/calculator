@@ -13,7 +13,7 @@
         color: #555;
     }
     body {
-        background-color:  #474545;
+        background-color: rgb(132, 166, 238);
     }
     .container {
         width: 320px;
